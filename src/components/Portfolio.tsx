@@ -51,12 +51,6 @@ interface Certification {
   backgroundColor: string;
 }
 
-interface ProjectsData {
-  software: Project[];
-  cloud: Project[];
-  security: Project[];
-}
-
 type ExperienceTab = 'Work' | 'Leadership';
 type SkillTab = 'Languages' | 'Frameworks & Libraries' | 'DevOps & Tools' | 'Cloud' | 'AI and ML' | 'Security';
 
