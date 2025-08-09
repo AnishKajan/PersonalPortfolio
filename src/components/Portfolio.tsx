@@ -157,7 +157,7 @@ const Portfolio: React.FC = () => {
       company: 'KeyBank',
       role: 'KeyBank Leader Development Student Summit',
       period: 'September 2025',
-      logo: '/assets/logos/key-bank-logo.png',
+      logo: '/assets/logos/Key-bank-logo.png',
       colors: { border: '#d50000', shadow: 'rgba(213, 0, 0, 0.4)', text: 'linear-gradient(to right, #000000, #d50000)' }
     },
     {
