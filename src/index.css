@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar__links.highlight {
+  color: #04d9ff;
+  border-bottom: 3px solid #04d9ff;
+}
