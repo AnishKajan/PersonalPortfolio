@@ -16,7 +16,6 @@ import {
   SiNextdotjs,
   SiTailwindcss,
   SiMongodb,
-  SiRender,
   SiJsonwebtokens,
 } from 'react-icons/si';
 import { FaJava } from "react-icons/fa";
@@ -604,7 +603,7 @@ const Portfolio: React.FC = () => {
                   <SiPostgresql className="w-8 h-8 text-blue-500 opacity-80 hover:opacity-100 transition-opacity" />
                   <img src="/assets/icons/aiMl/huggingFacejsx.svg" alt="Hugging Face" className="w-8 h-8 opacity-80 hover:opacity-100 transition-opacity" />                 
                   <img src="/assets/icons/aiMl/mixtralJSXfix.svg" alt="Mixtral" className="w-8 h-8 opacity-80 hover:opacity-100 transition-opacity" />
-                  <SiRender className="w-6 h-6 text-black-600 opacity-80 hover:opacity-100 transition-opacity" />
+                  <img src="/assets/icons/cloud/render-jsxFix.svg" alt="Render" className="w-8 h-8 opacity-80 hover:opacity-100 transition-opacity" />
                   <VscAzure className="w-8 h-8 text-blue-600 opacity-80 hover:opacity-100 transition-opacity" />
                   <SiVercel className="w-8 h-8 text-white opacity-80 hover:opacity-100 transition-opacity" />
                 </div>
