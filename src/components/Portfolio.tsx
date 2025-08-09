@@ -35,14 +35,6 @@ interface Experience {
   };
 }
 
-interface Project {
-  name: string;
-  languages: string;
-  github?: string;
-  description: string;
-  developing?: boolean;
-}
-
 interface Certification {
   company: string;
   name: string;
