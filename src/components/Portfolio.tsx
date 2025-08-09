@@ -20,9 +20,7 @@ import {
   SiMongodb,
   SiRender,
   SiJsonwebtokens,
-  SiHuggingface
 } from 'react-icons/si';
-import { RiMixtralFill } from "react-icons/ri";
 import { FaJava } from "react-icons/fa";
 import { VscAzure } from "react-icons/vsc";
 
@@ -621,8 +619,8 @@ const Portfolio: React.FC = () => {
                   <FaJava className="w-8 h-8 text-red-500 opacity-80 hover:opacity-100 transition-opacity" />
                   <SiSpring className="w-8 h-8 text-green-500 opacity-80 hover:opacity-100 transition-opacity" />
                   <SiPostgresql className="w-8 h-8 text-blue-500 opacity-80 hover:opacity-100 transition-opacity" />
-                  <SiHuggingface className="w-8 h-8 text-yellow-300 opacity-80 hover:opacity-100 transition-opacity" />                  
-                  <RiMixtralFill className="w-8 h-8 text-orange-600 opacity-80 hover:opacity-100 transition-opacity"/>
+                  <img src="/assets/icons/aiMl/huggingFacejsx.svg" alt="Hugging Face" className="w-8 h-8 opacity-80 hover:opacity-100 transition-opacity" />                 
+                  <img src="/assets/icons/aiMl/mixtralJSXfix.svg" alt="Mixtral" className="w-8 h-8 opacity-80 hover:opacity-100 transition-opacity" />
                   <SiRender className="w-6 h-6 text-black-600 opacity-80 hover:opacity-100 transition-opacity" />
                   <VscAzure className="w-8 h-8 text-blue-600 opacity-80 hover:opacity-100 transition-opacity" />
                   <SiVercel className="w-8 h-8 text-white opacity-80 hover:opacity-100 transition-opacity" />
