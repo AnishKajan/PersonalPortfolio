@@ -6,8 +6,6 @@ import {
   SiTypescript, 
   SiReact, 
   SiPython,
-  SiHtml5,
-  SiCss3, 
   SiFastapi, 
   SiNumpy, 
   SiPandas, 
@@ -59,7 +57,6 @@ interface ProjectsData {
   security: Project[];
 }
 
-type ActiveTab = keyof ProjectsData;
 type ExperienceTab = 'Work' | 'Leadership';
 type SkillTab = 'Languages' | 'Frameworks & Libraries' | 'DevOps & Tools' | 'Cloud' | 'AI and ML' | 'Security';
 

@@ -34,7 +34,6 @@ export interface ProjectsData {
   security: Project[];
 }
 
-export type ActiveTab = keyof ProjectsData;
 
 export interface ContactLink {
   href: string;
