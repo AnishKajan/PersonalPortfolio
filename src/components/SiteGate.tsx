@@ -1,5 +1,5 @@
 // src/components/SiteGate.tsx
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Shield, Lock } from 'lucide-react';
 
 declare global {
@@ -36,7 +36,7 @@ const SiteGate: React.FC<SiteGateProps> = ({ onVerified }) => {
     }
   }, [onVerified]);
 
-  const handleRecaptchaChange = async (token: string | null) => {
+  const handleRecaptchaChange = useCallback(async (token: string | null) => {
     if (!token) {
       setError('Please complete the verification.');
       return;
@@ -75,7 +75,7 @@ const SiteGate: React.FC<SiteGateProps> = ({ onVerified }) => {
     } finally {
       setIsVerifying(false);
     }
-  };
+  }, [onVerified]);
 
   useEffect(() => {
     if (recaptchaLoaded && window.grecaptcha) {
@@ -95,7 +95,7 @@ const SiteGate: React.FC<SiteGateProps> = ({ onVerified }) => {
         });
       }
     }
-  }, [recaptchaLoaded]);
+  }, [recaptchaLoaded, handleRecaptchaChange]);
 
   return (
     <div className="fixed inset-0 bg-gray-900 z-50 flex items-center justify-center">
