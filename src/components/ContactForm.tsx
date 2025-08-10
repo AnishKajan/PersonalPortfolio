@@ -71,7 +71,7 @@ const ContactForm: React.FC = () => {
     try {
       // Verify reCAPTCHA with your Cloudflare Worker
       // IMPORTANT: Replace this URL with your actual Cloudflare Worker URL
-      const verifyResponse = await fetch('https://recaptcha-verifier.anishkajan2005.workers.dev/verify-captcha', {
+      const verifyResponse = await fetch('YOUR-WORKER-URL-HERE.workers.dev/verify-captcha', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -185,12 +185,13 @@ const ContactForm: React.FC = () => {
             />
           </div>
 
-          {/* reCAPTCHA */}
+          {/* reCAPTCHA - Force challenge mode */}
           <div className="flex justify-center">
             <div 
               className="g-recaptcha" 
               data-sitekey="6Lf0daArAAAAAB6wXguJeGjdRncJA--7cId-9n2Z"
               data-theme="dark"
+              data-size="normal"
             />
           </div>
 
