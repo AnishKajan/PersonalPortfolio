@@ -13,6 +13,18 @@
     <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon_io/favicon-16x16.png" />
     <link rel="manifest" href="%PUBLIC_URL%/favicon_io/site.webmanifest" />
     
+    <!-- reCAPTCHA Script -->
+    <script src="https://www.google.com/recaptcha/api.js?onload=onRecaptchaLoad&render=explicit" async defer></script>
+    <script>
+      function onRecaptchaLoad() {
+        // This callback will be called when reCAPTCHA is loaded
+        console.log('reCAPTCHA loaded');
+        if (window.onRecaptchaLoad) {
+          window.onRecaptchaLoad();
+        }
+      }
+    </script>
+    
     <title>Anish Kajan Portfolio</title>
   </head>
   <body>

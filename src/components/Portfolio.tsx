@@ -20,6 +20,7 @@ import {
 } from 'react-icons/si';
 import { FaJava } from "react-icons/fa";
 import { VscAzure } from "react-icons/vsc";
+import ContactForm from './ContactForm';
 
 // Types
 interface Experience {
@@ -790,41 +791,65 @@ const Portfolio: React.FC = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-16 px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-5xl font-bold text-cyan-400 mb-12 drop-shadow-lg">
-            CONTACT ME
-          </h2>
-          <div className="flex flex-col md:flex-row justify-center items-center gap-8">
-            <a 
-              href="mailto:anishkajan2005@gmail.com"
-              className="w-64 h-64 bg-red-600 rounded-2xl flex items-center justify-center text-6xl hover:scale-110 hover:shadow-lg hover:shadow-cyan-400/40 transition-all"
-              aria-label="Send email"
-            >
-              <Mail />
-            </a>
-            <a 
-              href="https://www.linkedin.com/in/anish-kajan-18548a350/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-64 h-64 bg-blue-600 rounded-2xl flex items-center justify-center text-6xl hover:scale-110 hover:shadow-lg hover:shadow-cyan-400/40 transition-all"
-              aria-label="LinkedIn profile"
-            >
-              <Linkedin />
-            </a>
-            <a 
-              href="https://github.com/AnishKajan"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-64 h-64 bg-gray-800 rounded-2xl flex items-center justify-center text-6xl hover:scale-110 hover:shadow-lg hover:shadow-cyan-400/40 transition-all"
-              aria-label="GitHub profile"
-            >
-              <Github />
-            </a>
-          </div>
+      {/* Contact Section - Updated */}
+<section id="contact" className="py-16 px-8">
+  <div className="max-w-6xl mx-auto">
+    <h2 className="text-5xl font-bold text-cyan-400 text-center mb-16 drop-shadow-lg">
+      CONTACT ME
+    </h2>
+    
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      {/* Contact Form */}
+      <div>
+        <ContactForm />
+      </div>
+      
+      {/* Social Links */}
+      <div className="space-y-8">
+        <div className="text-center lg:text-left">
+          <h3 className="text-2xl font-bold text-cyan-400 mb-4">Let's Connect</h3>
+          <p className="text-gray-300 text-lg leading-relaxed">
+            I'm always interested in new opportunities, collaborations, and conversations about technology. 
+            Feel free to reach out through the form or connect with me on social media!
+          </p>
         </div>
-      </section>
+        
+        <div className="flex flex-col sm:flex-row lg:flex-col gap-6">
+          <a 
+            href="mailto:anishkajan2005@gmail.com"
+            className="flex items-center justify-center gap-4 bg-red-600 hover:bg-red-700 text-white px-6 py-4 rounded-xl transition-all hover:scale-105 hover:shadow-lg hover:shadow-red-600/40"
+            aria-label="Send email"
+          >
+            <Mail size={24} />
+            <span className="font-semibold">Email Me</span>
+          </a>
+          
+          <a 
+            href="https://www.linkedin.com/in/anish-kajan-18548a350/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-4 bg-blue-600 hover:bg-blue-700 text-white px-6 py-4 rounded-xl transition-all hover:scale-105 hover:shadow-lg hover:shadow-blue-600/40"
+            aria-label="LinkedIn profile"
+          >
+            <Linkedin size={24} />
+            <span className="font-semibold">LinkedIn</span>
+          </a>
+          
+          <a 
+            href="https://github.com/AnishKajan"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-4 bg-gray-700 hover:bg-gray-600 text-white px-6 py-4 rounded-xl transition-all hover:scale-105 hover:shadow-lg hover:shadow-gray-600/40"
+            aria-label="GitHub profile"
+          >
+            <Github size={24} />
+            <span className="font-semibold">GitHub</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Footer */}
       <footer className="bg-gray-900 py-8 px-8">
