@@ -123,7 +123,8 @@ const Portfolio: React.FC = () => {
       { name: "Splunk", icon: "/assets/icons/security/splunk.svg" },
       { name: "VMware", icon: "/assets/icons/security/vmware.svg" },
       { name: "Wireshark", icon: "/assets/icons/security/wireshark.svg" },
-      { name: "Cloudflare", icon: "/assets/icons/security/cloudflare.svg" }
+      { name: "Cloudflare", icon: "/assets/icons/security/cloudflare.svg" },
+      { name: "Google ReCAPTCHA", icon: "/assets/icons/security/Google-reCAPTCHA.svg" }
     ]
   };
 
