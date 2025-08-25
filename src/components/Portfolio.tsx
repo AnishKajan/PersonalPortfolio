@@ -131,6 +131,13 @@ const Portfolio: React.FC = () => {
   // Work Experience data
   const workExperiences: Experience[] = [
     {
+      company: 'Uber AI Solutions',
+      role: 'Freelance Generative AI Contributor',
+      period: 'Fall 2025',
+      logo: '/assets/logos/uber-logo.png',
+      colors: { border: '#000000', shadow: 'rgba(0, 0, 0, 0.6)', text: '#ffffff' }
+    },
+    {
       company: 'Accion Labs',
       role: 'Full Stack Developer Intern',
       period: 'Summer 2025',
