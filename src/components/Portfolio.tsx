@@ -135,7 +135,7 @@ const Portfolio: React.FC = () => {
       role: 'Freelance Generative AI Contributor',
       period: 'Fall 2025',
       logo: '/assets/logos/uber-logo.png',
-      colors: { border: '#000000', shadow: 'rgba(0, 0, 0, 0.6)', text: '#ffffff' }
+      colors: { border: '#000000', shadow: 'rgba(0, 0, 0, 0.6)', text: '#000000' }
     },
     {
       company: 'Accion Labs',
